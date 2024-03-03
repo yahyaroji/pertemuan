@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #b2c8ba;
 }
@@ -78,7 +83,7 @@ button:hover {
   width: 33%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .containerdua img {
     width: 100%;
   }

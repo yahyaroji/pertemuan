@@ -6,38 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .container {
-            display: flex;
-            justify-content: space-evenly;
-            width: 900px;
-            flex-wrap: wrap;
-            margin: 10px auto;
+            max-width: 800px;
+            margin: 40px auto;
+            /* display: flex;
+            justify-content: space-between; */
         }
 
         .card {
-            width: 200px;
-            display: flex;
-            flex-direction: column;
-            margin: 10px 10px;
-            justify-content: center;
-            border: 2px solid black;
             padding: 10px;
-
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            /* width: 30%; */
+            /* text-align: center; */
         }
 
-        .image img {
-            width: 100%;
+        .satu {
+            background-color: antiquewhite;
         }
 
-        .isi {
-            text-align: center;
+        .dua {
+            background-color: aqua;
         }
 
-        @media screen and (min-width:768px) {
-            .card {
+        .tiga {
+            background-color: aquamarine;
+        }
+
+        @media screen and (min-width:600px) {
+            .container {
                 display: flex;
-                justify-content: center;
-                width: 50%;
+                justify-content: space-between;
             }
+
+            .card {
+                width: 30%;
+            }
+
+            /* .dua {
+                background-color: blueviolet;
+            } */
+
         }
     </style>
 
@@ -46,51 +54,17 @@
 
 <body>
     <div class="container">
-
-        <div class="card">
-            <div class="image">
-                <img src="./img/1.jpg" alt="">
-            </div>
-            <div class="isi">
-                <h3>Keterampilan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dignissimos!</p>
-            </div>
+        <div class="card satu">
+            <h4>Card Satu</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, rerum?</p>
         </div>
-        <div class="card">
-            <div class="image">
-                <img src="./img/1.jpg" alt="">
-            </div>
-            <div class="isi">
-                <h3>Keterampilan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dignissimos!</p>
-            </div>
+        <div class="card dua">
+            <h4>Card Dua</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, rerum?</p>
         </div>
-        <div class="card">
-            <div class="image">
-                <img src="./img/1.jpg" alt="">
-            </div>
-            <div class="isi">
-                <h3>Keterampilan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dignissimos!</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="./img/1.jpg" alt="">
-            </div>
-            <div class="isi">
-                <h3>Keterampilan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dignissimos!</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="./img/1.jpg" alt="">
-            </div>
-            <div class="isi">
-                <h3>Keterampilan</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dignissimos!</p>
-            </div>
+        <div class="card tiga">
+            <h4>Card Tiga</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, rerum?</p>
         </div>
     </div>
 </body>
